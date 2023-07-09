@@ -17,6 +17,9 @@
 		F2EC8E192A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E182A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m */; };
 		F2EC8E232A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E222A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m */; };
 		F2EC8E252A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E242A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m */; };
+		F2EC8E332A5AD3C4008F1BFB /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EC8E312A5AD36B008F1BFB /* Masonry.framework */; };
+		F2EC8E342A5AD3C4008F1BFB /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2EC8E312A5AD36B008F1BFB /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F2EC8E352A5AD3C4008F1BFB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2EC8E342A5AD3C4008F1BFB /* Masonry.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +71,9 @@
 		F2EC8E1E2A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewCustomLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8E222A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCustomLayoutUITests.m; sourceTree = "<group>"; };
 		F2EC8E242A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCustomLayoutUITestsLaunchTests.m; sourceTree = "<group>"; };
+		F2EC8E312A5AD36B008F1BFB /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2EC8E332A5AD3C4008F1BFB /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +131,14 @@
 				F2EC8E002A5AD18D008F1BFB /* SceneDelegate.m */,
 				F2EC8E022A5AD18D008F1BFB /* ViewController.h */,
 				F2EC8E032A5AD18D008F1BFB /* ViewController.m */,
+				F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */,
+				F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */,
 				F2EC8E052A5AD18D008F1BFB /* Main.storyboard */,
 				F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */,
 				F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */,
 				F2EC8E0D2A5AD18E008F1BFB /* Info.plist */,
 				F2EC8E0E2A5AD18E008F1BFB /* main.m */,
+				F2EC8E312A5AD36B008F1BFB /* Masonry.framework */,
 			);
 			path = CollectionViewCustomLayout;
 			sourceTree = "<group>";
@@ -146,6 +170,7 @@
 				F2EC8DF52A5AD18D008F1BFB /* Sources */,
 				F2EC8DF62A5AD18D008F1BFB /* Frameworks */,
 				F2EC8DF72A5AD18D008F1BFB /* Resources */,
+				F2EC8E352A5AD3C4008F1BFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +295,7 @@
 				F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */,
 				F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */,
 				F2EC8E012A5AD18D008F1BFB /* SceneDelegate.m in Sources */,
+				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +468,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CollectionViewCustomLayout",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -468,6 +498,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CollectionViewCustomLayout",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
