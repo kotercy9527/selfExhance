@@ -8,11 +8,14 @@
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
 #import "MyCollectionViewCell.h"
+#import "MyCollectionViewLayout.h"
+#import "NSString+Width.h"
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,MyColletionViewLayoutDataSource>
 
 @property (nonatomic, strong) UICollectionView *colletionView;
-
+@property (nonatomic, strong) NSArray *dataArray;
 @end
 
 @implementation ViewController
@@ -21,14 +24,22 @@
     [super viewDidLoad];
     
     [self configInterface];
+    [self prepareData];
+}
+
+- (void)prepareData {
+//    self.dataArray = @[@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"insert some world long long a go",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display",@"this",@"is",@"a",@"test",@"longlonglong",@"program to display"];
+    self.dataArray = @[@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk"];
 }
 
 - (void)configInterface {
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    self.colletionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+    MyCollectionViewLayout *layout = [[MyCollectionViewLayout alloc] initWithRowHeight:50 rowGap:10 inset:UIEdgeInsetsZero];
+    layout.dataSource = self;
+    self.colletionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     [self.view addSubview:self.colletionView];
     [self.colletionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.top.equalTo(self.view).offset(200);
+        make.left.right.bottom.equalTo(self.view);
     }];
     self.colletionView.delegate = self;
     self.colletionView.dataSource = self;
@@ -37,18 +48,19 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return self.dataArray.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     MyCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    [cell updateContent:[NSString stringWithFormat:@"%ld",indexPath.row]];
+    [cell updateContent:[self.dataArray objectAtIndex:indexPath.row]];
     return cell;
     
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(100, 100);
+- (CGFloat)widthAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *string = [self.dataArray objectAtIndex:indexPath.row];
+    return [string contentWith:[UIFont systemFontOfSize:14] gap:3];
 }
 
 

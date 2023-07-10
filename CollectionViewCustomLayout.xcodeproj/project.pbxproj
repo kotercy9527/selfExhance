@@ -20,6 +20,9 @@
 		F2EC8E332A5AD3C4008F1BFB /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EC8E312A5AD36B008F1BFB /* Masonry.framework */; };
 		F2EC8E342A5AD3C4008F1BFB /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2EC8E312A5AD36B008F1BFB /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */; };
+		F2EC8E3B2A5ADB76008F1BFB /* MyCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */; };
+		F2EC8E3E2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E3D2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m */; };
+		F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,12 @@
 		F2EC8E312A5AD36B008F1BFB /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
 		F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		F2EC8E392A5ADB76008F1BFB /* MyCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayout.h; sourceTree = "<group>"; };
+		F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayout.m; sourceTree = "<group>"; };
+		F2EC8E3C2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		F2EC8E3D2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		F2EC8E3F2A5AF4DF008F1BFB /* NSString+Width.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Width.h"; sourceTree = "<group>"; };
+		F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Width.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +142,12 @@
 				F2EC8E032A5AD18D008F1BFB /* ViewController.m */,
 				F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */,
 				F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */,
+				F2EC8E392A5ADB76008F1BFB /* MyCollectionViewLayout.h */,
+				F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */,
+				F2EC8E3C2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.h */,
+				F2EC8E3D2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m */,
+				F2EC8E3F2A5AF4DF008F1BFB /* NSString+Width.h */,
+				F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */,
 				F2EC8E052A5AD18D008F1BFB /* Main.storyboard */,
 				F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */,
 				F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */,
@@ -295,7 +310,10 @@
 				F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */,
 				F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */,
 				F2EC8E012A5AD18D008F1BFB /* SceneDelegate.m in Sources */,
+				F2EC8E3B2A5ADB76008F1BFB /* MyCollectionViewLayout.m in Sources */,
 				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
+				F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */,
+				F2EC8E3E2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

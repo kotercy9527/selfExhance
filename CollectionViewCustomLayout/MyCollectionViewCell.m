@@ -8,6 +8,7 @@
 #import "MyCollectionViewCell.h"
 #import <Masonry/Masonry.h>
 
+
 @interface MyCollectionViewCell ()
 
 @property (nonatomic, strong) UILabel *label;
@@ -21,11 +22,14 @@
     if (self) {
         self.backgroundColor = [UIColor redColor];
         self.label = [[UILabel alloc] initWithFrame:CGRectZero];
+        self.label.backgroundColor = [UIColor greenColor];
         [self.contentView addSubview:self.label];
         [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.contentView);
+            make.top.bottom.centerX.equalTo(self.contentView);
+            make.left.equalTo(self.contentView).offset(3);
         }];
         self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.font = [UIFont systemFontOfSize:14];
     }
     return self;
 }
