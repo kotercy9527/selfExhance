@@ -78,7 +78,7 @@
     NSIndexPath *maxIndexPath = [NSIndexPath indexPathForRow:[self.collectionView numberOfItemsInSection:0] - 1 inSection:0];
     if ([self.layoutsDictionary.allKeys containsObject:[NSString stringFromIndexPath:maxIndexPath]]) {
         UICollectionViewLayoutAttributes *attribute = [self.layoutsDictionary valueForKey:[NSString stringFromIndexPath:maxIndexPath]];
-        return CGSizeMake(MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height), CGRectGetMaxY(attribute.frame));
+        return CGSizeMake(self.maxWidth, CGRectGetMaxY(attribute.frame) + self.insets.bottom);
     } else {
         return self.collectionView.frame.size;
     }
