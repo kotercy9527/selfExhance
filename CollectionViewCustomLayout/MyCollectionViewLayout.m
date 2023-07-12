@@ -29,7 +29,6 @@
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         [self customAttributeAtIndexPath:indexPath];
     }
-    
 }
 
 - (UICollectionViewLayoutAttributes *)customAttributeAtIndexPath:(NSIndexPath *)indexPath {

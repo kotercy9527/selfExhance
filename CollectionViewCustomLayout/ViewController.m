@@ -16,6 +16,9 @@
 
 @property (nonatomic, strong) UICollectionView *colletionView;
 @property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
+@property (nonatomic, strong) MyCollectionViewLayout *customLayout;
+
 @end
 
 @implementation ViewController
@@ -34,8 +37,24 @@
 }
 
 - (void)configInterface {
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn addTarget:self action:@selector(buttonClicked_switchLayout) forControlEvents:UIControlEventTouchUpInside];
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@100);
+        make.height.equalTo(@40);
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view.mas_top).offset(100);
+    }];
+    
     MyCollectionViewLayout *layout = [[MyCollectionViewLayout alloc] initWithRowHeight:50 rowGap:10 inset:UIEdgeInsetsMake(0, 10, 0, 10)];
     layout.dataSource = self;
+    self.customLayout = layout;
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    self.flowLayout = flowLayout;
     self.colletionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     [self.view addSubview:self.colletionView];
     [self.colletionView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -47,6 +66,15 @@
     [self.colletionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
 }
 
+- (void)buttonClicked_switchLayout {
+    if ([self.colletionView.collectionViewLayout isEqual:self.customLayout]) {
+        self.colletionView.collectionViewLayout =  self.flowLayout;
+    } else {
+        self.colletionView.collectionViewLayout =  self.customLayout;
+    }
+}
+
+#pragma mark - UICollectionViewDatasources
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataArray.count;
@@ -59,10 +87,18 @@
     
 }
 
+#pragma mark - MyColletionViewLayoutDataSource
+
 - (CGFloat)widthAtIndexPath:(NSIndexPath *)indexPath {
     NSString *string = [self.dataArray objectAtIndex:indexPath.row];
     return [string contentWith:[UIFont systemFontOfSize:14] gap:3];
 }
 
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *string = [self.dataArray objectAtIndex:indexPath.row];
+    return CGSizeMake([string contentWith:[UIFont systemFontOfSize:14] gap:3], 50);
+}
 
 @end
