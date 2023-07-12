@@ -19,8 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) id <MyColletionViewLayoutDataSource> dataSource;
 
 
+
+/// 构造方法
+/// - Parameters:
+///   - rowHeight: 高度，这里是写死的高度
+///   - minrowGap: 最小行间距
+///   - inset: 内容contentInset
 - (instancetype)initWithRowHeight:(CGFloat)rowHeight
-                           rowGap:(CGFloat)rowGap
+                           rowGap:(CGFloat)minrowGap
                         inset:(UIEdgeInsets)inset;
 @end
 

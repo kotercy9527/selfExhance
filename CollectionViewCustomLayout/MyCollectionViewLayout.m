@@ -14,8 +14,7 @@
 @property (nonatomic, strong) NSMutableDictionary *layoutsDictionary;
 @property (nonatomic, assign) UIEdgeInsets insets;
 @property (nonatomic, assign) CGFloat fixRowHeight;
-@property (nonatomic, assign)CGFloat rowGap;
-@property (nonatomic, assign) NSInteger totalRows;
+@property (nonatomic, assign) CGFloat rowGap;
 @property (nonatomic, assign) CGFloat maxWidth;
 
 @end
@@ -103,13 +102,19 @@
     
 #pragma mark - Init Methods
 
-- (instancetype)initWithRowHeight:(CGFloat)rowHeight rowGap:(CGFloat)rowGap inset:(UIEdgeInsets)inset {
+- (instancetype)initWithRowHeight:(CGFloat)rowHeight rowGap:(CGFloat)minrowGap inset:(UIEdgeInsets)inset {
     if (self = [super init]) {
-        self.fixRowHeight = rowHeight;
-        self.rowGap = rowGap;
-        self.insets = inset;
         self.layoutsDictionary = [NSMutableDictionary dictionary];
         self.maxWidth = MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+        self.fixRowHeight = rowHeight;
+        self.insets = inset;
+        
+        //一行最大的个数
+        NSInteger maxCount = (self.maxWidth - self.insets.left - self.insets.right + minrowGap)/(self.fixRowHeight + minrowGap);
+        //cell所需要占用的最小宽度
+        CGFloat cellMinWidth = self.insets.left + maxCount * self.fixRowHeight + self.insets.right;
+        //计算可用的cell间距
+        self.rowGap = (self.maxWidth - cellMinWidth)/(maxCount - 1);
     }
     return self;
 }
