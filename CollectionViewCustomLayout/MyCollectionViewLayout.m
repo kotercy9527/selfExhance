@@ -41,26 +41,35 @@
 
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     CGRect frame = attributes.frame;
-    frame.size.width = [self.dataSource widthAtIndexPath:indexPath];
-    if (frame.size.width > self.maxWidth - self.insets.left - self.insets.right) {
-        frame.size.width = self.maxWidth ;
+
+    CGFloat width = [self.dataSource widthAtIndexPath:indexPath];
+    if (width < 50) {
+        width  = 50;
     }
-    frame.size.height = self.fixRowHeight;
-    attributes.frame = frame;
+    width = MAX(width, 50);
+    width = MIN(width, self.maxWidth - self.insets.left - self.insets.right);
+
+    CGFloat height = self.fixRowHeight;
+    
+    CGFloat originX = frame.origin.x;
+    CGFloat originY = frame.origin.y;
     
     if (indexPath.row == 0) {
-        attributes.frame = CGRectMake(self.insets.left, 0, frame.size.width, self.fixRowHeight);
+        attributes.frame = CGRectMake(self.insets.left, 0, width, height);
     } else {
         NSIndexPath *preIndexPath = [NSIndexPath indexPathForRow:indexPath.row - 1 inSection:indexPath.section];
         UICollectionViewLayoutAttributes *preAttribute = [self customAttributeAtIndexPath:preIndexPath];
         
-        if (CGRectGetMaxX(preAttribute.frame) + attributes.frame.size.width + self.rowGap + self.insets.right > self.maxWidth) {
-            CGRect frame = attributes.frame;
-            frame.origin.x = self.insets.left;
-            frame.origin.y = CGRectGetMaxY(preAttribute.frame) + self.rowGap;
-            attributes.frame = frame;
+        if (CGRectGetMaxX(preAttribute.frame) + width + self.rowGap + self.insets.right > self.maxWidth) {
+            //需要换行
+            originX = self.insets.left;
+            originY = CGRectGetMaxY(preAttribute.frame) + self.rowGap;
+            attributes.frame = CGRectMake(originX, originY, width, height);
         } else {
-            attributes.frame = CGRectMake(CGRectGetMaxX(preAttribute.frame) + self.rowGap, CGRectGetMinY(preAttribute.frame), [self.dataSource widthAtIndexPath:indexPath], self.fixRowHeight);
+            //不需要换行
+            originX = CGRectGetMaxX(preAttribute.frame) + self.rowGap;
+            originY = CGRectGetMinY(preAttribute.frame);
+            attributes.frame = CGRectMake(originX, originY, width, height);
         }
     }
     [self.layoutsDictionary setValue:attributes forKey:[NSString stringFromIndexPath:indexPath]];
