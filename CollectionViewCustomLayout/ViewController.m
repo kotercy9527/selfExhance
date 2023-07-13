@@ -65,12 +65,23 @@
     self.colletionView.dataSource = self;
     [self.colletionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     self.colletionView.backgroundColor = [UIColor blackColor];
-    self.colletionView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+    
+    self.colletionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         NSLog(@"触发重新加载");
     }];
-    
-    self.colletionView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
+
+    // The pull to refresh
+    self.colletionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         NSLog(@"触发加载更多");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.colletionView.mj_footer endRefreshing];
+            NSMutableArray *multiArray = [NSMutableArray array];
+            [multiArray addObjectsFromArray:self.dataArray];
+            [multiArray addObjectsFromArray:[self.dataArray subarrayWithRange:NSMakeRange(0, 4)]];
+            self.dataArray = [NSArray arrayWithArray:multiArray];
+            [self.colletionView reloadData];
+        });
+       
     }];
 }
 
