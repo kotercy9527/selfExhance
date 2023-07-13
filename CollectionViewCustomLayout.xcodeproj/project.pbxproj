@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2DB0D3F2A6042F4002D41F1 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */; };
+		F2DB0D402A6042F4002D41F1 /* MJRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E012A5AD18D008F1BFB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E002A5AD18D008F1BFB /* SceneDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* ViewController.m */; };
@@ -50,6 +52,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F2EC8E342A5AD3C4008F1BFB /* Masonry.framework in Embed Frameworks */,
+				F2DB0D402A6042F4002D41F1 /* MJRefresh.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2EC8E332A5AD3C4008F1BFB /* Masonry.framework in Frameworks */,
+				F2DB0D3F2A6042F4002D41F1 /* MJRefresh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +155,7 @@
 				F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */,
 				F2EC8E052A5AD18D008F1BFB /* Main.storyboard */,
 				F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */,
+				F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */,
 				F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */,
 				F2EC8E0D2A5AD18E008F1BFB /* Info.plist */,
 				F2EC8E0E2A5AD18E008F1BFB /* main.m */,

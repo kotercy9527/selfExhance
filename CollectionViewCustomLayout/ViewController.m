@@ -10,6 +10,7 @@
 #import "MyCollectionViewCell.h"
 #import "MyCollectionViewLayout.h"
 #import "NSString+Width.h"
+#import <MJRefresh/MJRefresh.h>
 
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,MyColletionViewLayoutDataSource>
@@ -32,8 +33,7 @@
 }
 
 - (void)prepareData {
-    self.dataArray = @[@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok"];
-//    self.dataArray = @[@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk",@"123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk123123sdfkhsdkfjhsdfk"];
+    self.dataArray = @[@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"this",@"is",@"a",@"test",@"对不起，我这个就比较长了",@"哈哈，我总比你长吧，谦虚一点儿，ok",@"this",@"is",@"a",@"test",@"this",@"is"];
 }
 
 - (void)configInterface {
@@ -64,6 +64,14 @@
     self.colletionView.delegate = self;
     self.colletionView.dataSource = self;
     [self.colletionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    self.colletionView.backgroundColor = [UIColor blackColor];
+    self.colletionView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        NSLog(@"触发重新加载");
+    }];
+    
+    self.colletionView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
+        NSLog(@"触发加载更多");
+    }];
 }
 
 - (void)buttonClicked_switchLayout {
