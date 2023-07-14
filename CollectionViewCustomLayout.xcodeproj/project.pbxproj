@@ -7,41 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2DB0D3F2A6042F4002D41F1 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */; };
-		F2DB0D402A6042F4002D41F1 /* MJRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2DB0D432A6180D8002D41F1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0D422A6180D8002D41F1 /* SettingViewController.m */; };
+		F2DB0D5A2A61B4DC002D41F1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0D572A61B4DC002D41F1 /* SettingViewController.m */; };
+		F2DB0D622A61B644002D41F1 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D602A61B616002D41F1 /* Masonry.framework */; };
+		F2DB0D632A61B644002D41F1 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D602A61B616002D41F1 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DB0D642A61B646002D41F1 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */; };
+		F2DB0D652A61B646002D41F1 /* MJRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
 		F2EC8E0C2A5AD18E008F1BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */; };
 		F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E0E2A5AD18E008F1BFB /* main.m */; };
-		F2EC8E192A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E182A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m */; };
-		F2EC8E232A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E222A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m */; };
-		F2EC8E252A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E242A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m */; };
-		F2EC8E332A5AD3C4008F1BFB /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EC8E312A5AD36B008F1BFB /* Masonry.framework */; };
-		F2EC8E342A5AD3C4008F1BFB /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2EC8E312A5AD36B008F1BFB /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */; };
 		F2EC8E3B2A5ADB76008F1BFB /* MyCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */; };
-		F2EC8E3E2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E3D2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m */; };
 		F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F2EC8E152A5AD18E008F1BFB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2EC8DF12A5AD18D008F1BFB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2EC8DF82A5AD18D008F1BFB;
-			remoteInfo = CollectionViewCustomLayout;
-		};
-		F2EC8E1F2A5AD18E008F1BFB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2EC8DF12A5AD18D008F1BFB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2EC8DF82A5AD18D008F1BFB;
-			remoteInfo = CollectionViewCustomLayout;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F2EC8E352A5AD3C4008F1BFB /* Embed Frameworks */ = {
@@ -50,8 +29,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F2EC8E342A5AD3C4008F1BFB /* Masonry.framework in Embed Frameworks */,
-				F2DB0D402A6042F4002D41F1 /* MJRefresh.framework in Embed Frameworks */,
+				F2DB0D632A61B644002D41F1 /* Masonry.framework in Embed Frameworks */,
+				F2DB0D652A61B646002D41F1 /* MJRefresh.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,9 +38,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = "<group>"; };
-		F2DB0D412A6180D8002D41F1 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		F2DB0D422A6180D8002D41F1 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		F2DB0D562A61B4DC002D41F1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		F2DB0D572A61B4DC002D41F1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = "<group>"; };
+		F2DB0D602A61B616002D41F1 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,18 +51,10 @@
 		F2EC8E0B2A5AD18E008F1BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2EC8E0D2A5AD18E008F1BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2EC8E0E2A5AD18E008F1BFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F2EC8E142A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewCustomLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2EC8E182A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCustomLayoutTests.m; sourceTree = "<group>"; };
-		F2EC8E1E2A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewCustomLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2EC8E222A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCustomLayoutUITests.m; sourceTree = "<group>"; };
-		F2EC8E242A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCustomLayoutUITestsLaunchTests.m; sourceTree = "<group>"; };
-		F2EC8E312A5AD36B008F1BFB /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
 		F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		F2EC8E392A5ADB76008F1BFB /* MyCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayout.h; sourceTree = "<group>"; };
 		F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayout.m; sourceTree = "<group>"; };
-		F2EC8E3C2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
-		F2EC8E3D2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
 		F2EC8E3F2A5AF4DF008F1BFB /* NSString+Width.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Width.h"; sourceTree = "<group>"; };
 		F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Width.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,34 +64,114 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2EC8E332A5AD3C4008F1BFB /* Masonry.framework in Frameworks */,
-				F2DB0D3F2A6042F4002D41F1 /* MJRefresh.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EC8E112A5AD18E008F1BFB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EC8E1B2A5AD18E008F1BFB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F2DB0D622A61B644002D41F1 /* Masonry.framework in Frameworks */,
+				F2DB0D642A61B646002D41F1 /* MJRefresh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2DB0D472A61B40A002D41F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB0D4D2A61B463002D41F1 /* Layout */,
+				F2DB0D4C2A61B45B002D41F1 /* Model */,
+				F2DB0D4B2A61B450002D41F1 /* View */,
+				F2DB0D492A61B430002D41F1 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2DB0D482A61B41B002D41F1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB0D582A61B4DC002D41F1 /* Model */,
+				F2DB0D592A61B4DC002D41F1 /* View */,
+				F2DB0D552A61B4DC002D41F1 /* ViewController */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F2DB0D492A61B430002D41F1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F2EC8E022A5AD18D008F1BFB /* HomeViewController.h */,
+				F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F2DB0D4B2A61B450002D41F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */,
+				F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2DB0D4C2A61B45B002D41F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2DB0D4D2A61B463002D41F1 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F2EC8E392A5ADB76008F1BFB /* MyCollectionViewLayout.h */,
+				F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		F2DB0D552A61B4DC002D41F1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB0D562A61B4DC002D41F1 /* SettingViewController.h */,
+				F2DB0D572A61B4DC002D41F1 /* SettingViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F2DB0D582A61B4DC002D41F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2DB0D592A61B4DC002D41F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2DB0D5C2A61B4F9002D41F1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2EC8E3F2A5AF4DF008F1BFB /* NSString+Width.h */,
+				F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F2DB0D5D2A61B52F002D41F1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */,
+				F2DB0D602A61B616002D41F1 /* Masonry.framework */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		F2EC8DF02A5AD18D008F1BFB = {
 			isa = PBXGroup;
 			children = (
 				F2EC8DFB2A5AD18D008F1BFB /* CollectionViewCustomLayout */,
-				F2EC8E172A5AD18E008F1BFB /* CollectionViewCustomLayoutTests */,
-				F2EC8E212A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests */,
 				F2EC8DFA2A5AD18D008F1BFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,8 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */,
-				F2EC8E142A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.xctest */,
-				F2EC8E1E2A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,43 +189,16 @@
 			children = (
 				F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */,
 				F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */,
-				F2EC8E022A5AD18D008F1BFB /* HomeViewController.h */,
-				F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */,
-				F2DB0D412A6180D8002D41F1 /* SettingViewController.h */,
-				F2DB0D422A6180D8002D41F1 /* SettingViewController.m */,
-				F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */,
-				F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */,
-				F2EC8E392A5ADB76008F1BFB /* MyCollectionViewLayout.h */,
-				F2EC8E3A2A5ADB76008F1BFB /* MyCollectionViewLayout.m */,
-				F2EC8E3C2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.h */,
-				F2EC8E3D2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m */,
-				F2EC8E3F2A5AF4DF008F1BFB /* NSString+Width.h */,
-				F2EC8E402A5AF4DF008F1BFB /* NSString+Width.m */,
 				F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */,
-				F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */,
-				F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */,
+				F2DB0D5C2A61B4F9002D41F1 /* Category */,
+				F2DB0D472A61B40A002D41F1 /* Home */,
 				F2EC8E0D2A5AD18E008F1BFB /* Info.plist */,
+				F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */,
+				F2DB0D5D2A61B52F002D41F1 /* Library */,
 				F2EC8E0E2A5AD18E008F1BFB /* main.m */,
-				F2EC8E312A5AD36B008F1BFB /* Masonry.framework */,
+				F2DB0D482A61B41B002D41F1 /* Setting */,
 			);
 			path = CollectionViewCustomLayout;
-			sourceTree = "<group>";
-		};
-		F2EC8E172A5AD18E008F1BFB /* CollectionViewCustomLayoutTests */ = {
-			isa = PBXGroup;
-			children = (
-				F2EC8E182A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m */,
-			);
-			path = CollectionViewCustomLayoutTests;
-			sourceTree = "<group>";
-		};
-		F2EC8E212A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F2EC8E222A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m */,
-				F2EC8E242A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m */,
-			);
-			path = CollectionViewCustomLayoutUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,42 +222,6 @@
 			productReference = F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F2EC8E132A5AD18E008F1BFB /* CollectionViewCustomLayoutTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2EC8E2B2A5AD18E008F1BFB /* Build configuration list for PBXNativeTarget "CollectionViewCustomLayoutTests" */;
-			buildPhases = (
-				F2EC8E102A5AD18E008F1BFB /* Sources */,
-				F2EC8E112A5AD18E008F1BFB /* Frameworks */,
-				F2EC8E122A5AD18E008F1BFB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2EC8E162A5AD18E008F1BFB /* PBXTargetDependency */,
-			);
-			name = CollectionViewCustomLayoutTests;
-			productName = CollectionViewCustomLayoutTests;
-			productReference = F2EC8E142A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F2EC8E1D2A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2EC8E2E2A5AD18E008F1BFB /* Build configuration list for PBXNativeTarget "CollectionViewCustomLayoutUITests" */;
-			buildPhases = (
-				F2EC8E1A2A5AD18E008F1BFB /* Sources */,
-				F2EC8E1B2A5AD18E008F1BFB /* Frameworks */,
-				F2EC8E1C2A5AD18E008F1BFB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2EC8E202A5AD18E008F1BFB /* PBXTargetDependency */,
-			);
-			name = CollectionViewCustomLayoutUITests;
-			productName = CollectionViewCustomLayoutUITests;
-			productReference = F2EC8E1E2A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,14 +233,6 @@
 				TargetAttributes = {
 					F2EC8DF82A5AD18D008F1BFB = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					F2EC8E132A5AD18E008F1BFB = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = F2EC8DF82A5AD18D008F1BFB;
-					};
-					F2EC8E1D2A5AD18E008F1BFB = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = F2EC8DF82A5AD18D008F1BFB;
 					};
 				};
 			};
@@ -271,8 +250,6 @@
 			projectRoot = "";
 			targets = (
 				F2EC8DF82A5AD18D008F1BFB /* CollectionViewCustomLayout */,
-				F2EC8E132A5AD18E008F1BFB /* CollectionViewCustomLayoutTests */,
-				F2EC8E1D2A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,20 +264,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2EC8E122A5AD18E008F1BFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EC8E1C2A5AD18E008F1BFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -312,44 +275,13 @@
 				F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */,
 				F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */,
 				F2EC8E3B2A5ADB76008F1BFB /* MyCollectionViewLayout.m in Sources */,
-				F2DB0D432A6180D8002D41F1 /* SettingViewController.m in Sources */,
 				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
 				F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */,
-				F2EC8E3E2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EC8E102A5AD18E008F1BFB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2EC8E192A5AD18E008F1BFB /* CollectionViewCustomLayoutTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EC8E1A2A5AD18E008F1BFB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2EC8E252A5AD18E008F1BFB /* CollectionViewCustomLayoutUITestsLaunchTests.m in Sources */,
-				F2EC8E232A5AD18E008F1BFB /* CollectionViewCustomLayoutUITests.m in Sources */,
+				F2DB0D5A2A61B4DC002D41F1 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F2EC8E162A5AD18E008F1BFB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2EC8DF82A5AD18D008F1BFB /* CollectionViewCustomLayout */;
-			targetProxy = F2EC8E152A5AD18E008F1BFB /* PBXContainerItemProxy */;
-		};
-		F2EC8E202A5AD18E008F1BFB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2EC8DF82A5AD18D008F1BFB /* CollectionViewCustomLayout */;
-			targetProxy = F2EC8E1F2A5AD18E008F1BFB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */ = {
@@ -483,6 +415,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CollectionViewCustomLayout",
+					"$(PROJECT_DIR)/CollectionViewCustomLayout/Library",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomLayout/Info.plist;
@@ -496,6 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kotercy.CollectionViewCustomLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +448,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CollectionViewCustomLayout",
+					"$(PROJECT_DIR)/CollectionViewCustomLayout/Library",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomLayout/Info.plist;
@@ -532,70 +467,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F2EC8E2C2A5AD18E008F1BFB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kotercy.CollectionViewCustomLayoutTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewCustomLayout.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CollectionViewCustomLayout";
-			};
-			name = Debug;
-		};
-		F2EC8E2D2A5AD18E008F1BFB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kotercy.CollectionViewCustomLayoutTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewCustomLayout.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CollectionViewCustomLayout";
-			};
-			name = Release;
-		};
-		F2EC8E2F2A5AD18E008F1BFB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kotercy.CollectionViewCustomLayoutUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CollectionViewCustomLayout;
-			};
-			name = Debug;
-		};
-		F2EC8E302A5AD18E008F1BFB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kotercy.CollectionViewCustomLayoutUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CollectionViewCustomLayout;
 			};
 			name = Release;
 		};
@@ -616,24 +487,6 @@
 			buildConfigurations = (
 				F2EC8E292A5AD18E008F1BFB /* Debug */,
 				F2EC8E2A2A5AD18E008F1BFB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2EC8E2B2A5AD18E008F1BFB /* Build configuration list for PBXNativeTarget "CollectionViewCustomLayoutTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2EC8E2C2A5AD18E008F1BFB /* Debug */,
-				F2EC8E2D2A5AD18E008F1BFB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2EC8E2E2A5AD18E008F1BFB /* Build configuration list for PBXNativeTarget "CollectionViewCustomLayoutUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2EC8E2F2A5AD18E008F1BFB /* Debug */,
-				F2EC8E302A5AD18E008F1BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

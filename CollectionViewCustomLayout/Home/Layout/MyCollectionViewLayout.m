@@ -6,7 +6,6 @@
 //
 
 #import "MyCollectionViewLayout.h"
-#import "MyCollectionViewLayoutAttributes.h"
 #import "NSString+Width.h"
 
 @interface MyCollectionViewLayout ()
