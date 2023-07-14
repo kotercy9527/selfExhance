@@ -6,8 +6,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "SecondViewController.h"
+#import "HomeViewController.h"
+#import "SettingViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,17 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
     UITabBarController *tabViewController = [[UITabBarController alloc] init];
-    ViewController *homeViewController = [[ViewController alloc] init];
+    
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
     homeViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:[[UIImage imageNamed:@"tab_home_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tab_home_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
-    SecondViewController *secondViewController = [[SecondViewController alloc] init];
-    secondViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Setting" image:[[UIImage imageNamed:@"tab_mine_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tab_mine_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    SettingViewController *settingViewController = [[SettingViewController alloc] init];
+    settingViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Setting" image:[[UIImage imageNamed:@"tab_mine_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tab_mine_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     UITabBar.appearance.tintColor = [UIColor redColor];//将tabbar的高亮色修改为红色
     
     [tabViewController addChildViewController:homeViewController];
-    [tabViewController addChildViewController:secondViewController];
+    [tabViewController addChildViewController:settingViewController];
     
     tabViewController.tabBar.backgroundColor = [UIColor whiteColor];
     

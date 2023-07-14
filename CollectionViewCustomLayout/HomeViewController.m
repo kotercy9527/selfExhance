@@ -1,11 +1,11 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  CollectionViewCustomLayout
 //
 //  Created by zhipeng jiang on 2023/7/9.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import <Masonry/Masonry.h>
 #import "MyCollectionViewCell.h"
 #import "MyCollectionViewLayout.h"
@@ -13,7 +13,7 @@
 #import <MJRefresh/MJRefresh.h>
 
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,MyColletionViewLayoutDataSource>
+@interface HomeViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,MyColletionViewLayoutDataSource>
 
 @property (nonatomic, strong) UICollectionView *colletionView;
 @property (nonatomic, strong) NSArray *dataArray;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

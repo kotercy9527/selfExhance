@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		F2DB0D3F2A6042F4002D41F1 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */; };
 		F2DB0D402A6042F4002D41F1 /* MJRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2DB0D432A6180D8002D41F1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0D422A6180D8002D41F1 /* SecondViewController.m */; };
-		F2DB0D462A61AD55002D41F1 /* CustomTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0D452A61AD55002D41F1 /* CustomTabbarItem.m */; };
+		F2DB0D432A6180D8002D41F1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0D422A6180D8002D41F1 /* SettingViewController.m */; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
-		F2EC8E042A5AD18D008F1BFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* ViewController.m */; };
+		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
 		F2EC8E0C2A5AD18E008F1BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E0A2A5AD18E008F1BFB /* LaunchScreen.storyboard */; };
 		F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E0E2A5AD18E008F1BFB /* main.m */; };
@@ -61,15 +60,13 @@
 
 /* Begin PBXFileReference section */
 		F2DB0D3D2A6042EA002D41F1 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = "<group>"; };
-		F2DB0D412A6180D8002D41F1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F2DB0D422A6180D8002D41F1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		F2DB0D442A61AD55002D41F1 /* CustomTabbarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTabbarItem.h; sourceTree = "<group>"; };
-		F2DB0D452A61AD55002D41F1 /* CustomTabbarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabbarItem.m; sourceTree = "<group>"; };
+		F2DB0D412A6180D8002D41F1 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		F2DB0D422A6180D8002D41F1 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F2EC8E022A5AD18D008F1BFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2EC8E032A5AD18D008F1BFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2EC8E022A5AD18D008F1BFB /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2EC8E0B2A5AD18E008F1BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2EC8E0D2A5AD18E008F1BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,12 +139,10 @@
 			children = (
 				F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */,
 				F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */,
-				F2EC8E022A5AD18D008F1BFB /* ViewController.h */,
-				F2EC8E032A5AD18D008F1BFB /* ViewController.m */,
-				F2DB0D442A61AD55002D41F1 /* CustomTabbarItem.h */,
-				F2DB0D452A61AD55002D41F1 /* CustomTabbarItem.m */,
-				F2DB0D412A6180D8002D41F1 /* SecondViewController.h */,
-				F2DB0D422A6180D8002D41F1 /* SecondViewController.m */,
+				F2EC8E022A5AD18D008F1BFB /* HomeViewController.h */,
+				F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */,
+				F2DB0D412A6180D8002D41F1 /* SettingViewController.h */,
+				F2DB0D422A6180D8002D41F1 /* SettingViewController.m */,
 				F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */,
 				F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */,
 				F2EC8E392A5ADB76008F1BFB /* MyCollectionViewLayout.h */,
@@ -313,13 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2EC8E042A5AD18D008F1BFB /* ViewController.m in Sources */,
+				F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */,
 				F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */,
 				F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */,
 				F2EC8E3B2A5ADB76008F1BFB /* MyCollectionViewLayout.m in Sources */,
-				F2DB0D432A6180D8002D41F1 /* SecondViewController.m in Sources */,
+				F2DB0D432A6180D8002D41F1 /* SettingViewController.m in Sources */,
 				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
-				F2DB0D462A61AD55002D41F1 /* CustomTabbarItem.m in Sources */,
 				F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */,
 				F2EC8E3E2A5AE8B0008F1BFB /* MyCollectionViewLayoutAttributes.m in Sources */,
 			);

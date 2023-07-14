@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  SettingViewController.h
 //  CollectionViewCustomLayout
 //
 //  Created by zhipeng jiang on 2023/7/14.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SecondViewController : UIViewController
+@interface SettingViewController : UIViewController
 
 @end
 

@@ -1,17 +1,17 @@
 //
-//  SecondViewController.m
+//  SettingViewController.m
 //  CollectionViewCustomLayout
 //
 //  Created by zhipeng jiang on 2023/7/14.
 //
 
-#import "SecondViewController.h"
+#import "SettingViewController.h"
 
-@interface SecondViewController ()
+@interface SettingViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation SettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
