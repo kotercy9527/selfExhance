@@ -6,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,26 +17,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UITabBarController *tabViewController = [[UITabBarController alloc] init];
+    ViewController *homeViewController = [[ViewController alloc] init];
+    homeViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:[[UIImage imageNamed:@"tab_home_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tab_home_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    SecondViewController *secondViewController = [[SecondViewController alloc] init];
+    secondViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Setting" image:[[UIImage imageNamed:@"tab_mine_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tab_mine_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    UITabBar.appearance.tintColor = [UIColor redColor];//将tabbar的高亮色修改为红色
+    
+    [tabViewController addChildViewController:homeViewController];
+    [tabViewController addChildViewController:secondViewController];
+    
+    tabViewController.tabBar.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = tabViewController;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
-
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
 
 @end
