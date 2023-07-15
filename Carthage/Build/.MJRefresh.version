@@ -1,0 +1,26 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.7.6",
+  "iOS" : [
+    {
+      "hash" : "6f15dd723d7422ae1dbfe46c4a256c36acbbf106ffef4f4e1e5674b63edb8ead",
+      "name" : "MJRefresh",
+      "container" : "MJRefresh.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "0a38825438f5b98369a4916ab101224e485cb515d7c4100f1a23c43efa0099dd",
+      "name" : "MJRefresh",
+      "container" : "MJRefresh.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}

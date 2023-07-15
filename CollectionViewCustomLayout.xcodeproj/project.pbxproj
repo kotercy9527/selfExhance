@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F2DB0D5A2A61B4DC002D41F1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0D572A61B4DC002D41F1 /* SettingViewController.m */; };
-		F2DB0D622A61B644002D41F1 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D602A61B616002D41F1 /* Masonry.framework */; };
-		F2DB0D632A61B644002D41F1 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D602A61B616002D41F1 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2DB0D642A61B646002D41F1 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */; };
-		F2DB0D652A61B646002D41F1 /* MJRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DB0DAD2A623E02002D41F1 /* Masonry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DA92A623DEC002D41F1 /* Masonry.xcframework */; };
+		F2DB0DAE2A623E02002D41F1 /* Masonry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DA92A623DEC002D41F1 /* Masonry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DB0DAF2A623E03002D41F1 /* MJRefresh.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */; };
+		F2DB0DB02A623E03002D41F1 /* MJRefresh.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
@@ -29,8 +29,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F2DB0D632A61B644002D41F1 /* Masonry.framework in Embed Frameworks */,
-				F2DB0D652A61B646002D41F1 /* MJRefresh.framework in Embed Frameworks */,
+				F2DB0DB02A623E03002D41F1 /* MJRefresh.xcframework in Embed Frameworks */,
+				F2DB0DAE2A623E02002D41F1 /* Masonry.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,8 +40,8 @@
 /* Begin PBXFileReference section */
 		F2DB0D562A61B4DC002D41F1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		F2DB0D572A61B4DC002D41F1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = "<group>"; };
-		F2DB0D602A61B616002D41F1 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		F2DB0DA92A623DEC002D41F1 /* Masonry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Masonry.xcframework; path = Carthage/Build/Masonry.xcframework; sourceTree = SOURCE_ROOT; };
+		F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MJRefresh.xcframework; path = Carthage/Build/MJRefresh.xcframework; sourceTree = SOURCE_ROOT; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DB0D622A61B644002D41F1 /* Masonry.framework in Frameworks */,
-				F2DB0D642A61B646002D41F1 /* MJRefresh.framework in Frameworks */,
+				F2DB0DAF2A623E03002D41F1 /* MJRefresh.xcframework in Frameworks */,
+				F2DB0DAD2A623E02002D41F1 /* Masonry.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +162,8 @@
 		F2DB0D5D2A61B52F002D41F1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				F2DB0D5E2A61B5E3002D41F1 /* MJRefresh.framework */,
-				F2DB0D602A61B616002D41F1 /* Masonry.framework */,
+				F2DB0DA92A623DEC002D41F1 /* Masonry.xcframework */,
+				F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -416,6 +416,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CollectionViewCustomLayout",
 					"$(PROJECT_DIR)/CollectionViewCustomLayout/Library",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomLayout/Info.plist;
@@ -449,6 +450,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CollectionViewCustomLayout",
 					"$(PROJECT_DIR)/CollectionViewCustomLayout/Library",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomLayout/Info.plist;
