@@ -14,6 +14,8 @@
 		F2DB0DB02A623E03002D41F1 /* MJRefresh.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0DB22A62435B002D41F1 /* SubChooseView.m */; };
 		F2DB0DB72A6247DB002D41F1 /* SubChooseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0DB62A6247DB002D41F1 /* SubChooseCollectionViewCell.m */; };
+		F2DB0DBA2A62ED4E002D41F1 /* LookinServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DB82A62ED14002D41F1 /* LookinServer.framework */; };
+		F2DB0DBB2A62ED4E002D41F1 /* LookinServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DB82A62ED14002D41F1 /* LookinServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F2DB0DB02A623E03002D41F1 /* MJRefresh.xcframework in Embed Frameworks */,
+				F2DB0DBB2A62ED4E002D41F1 /* LookinServer.framework in Embed Frameworks */,
 				F2DB0DAE2A623E02002D41F1 /* Masonry.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -48,6 +51,7 @@
 		F2DB0DB22A62435B002D41F1 /* SubChooseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubChooseView.m; sourceTree = "<group>"; };
 		F2DB0DB52A6247DB002D41F1 /* SubChooseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubChooseCollectionViewCell.h; sourceTree = "<group>"; };
 		F2DB0DB62A6247DB002D41F1 /* SubChooseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubChooseCollectionViewCell.m; sourceTree = "<group>"; };
+		F2DB0DB82A62ED14002D41F1 /* LookinServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LookinServer.framework; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DB0DAF2A623E03002D41F1 /* MJRefresh.xcframework in Frameworks */,
+				F2DB0DBA2A62ED4E002D41F1 /* LookinServer.framework in Frameworks */,
 				F2DB0DAD2A623E02002D41F1 /* Masonry.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +174,7 @@
 		F2DB0D5D2A61B52F002D41F1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				F2DB0DB82A62ED14002D41F1 /* LookinServer.framework */,
 				F2DB0DA92A623DEC002D41F1 /* Masonry.xcframework */,
 				F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */,
 			);
