@@ -1,7 +1,7 @@
 {
   "Mac" : [
     {
-      "hash" : "e19026810c77d4a8dc590cc4db1b467abb3674b96a032bdb3ce3314c83f18ddd",
+      "hash" : "2a2a4c0eb334e205ca65ce3ed6d9afe2f030108227744b5d6265e1209e3dfb07",
       "name" : "Masonry",
       "container" : "Masonry.xcframework",
       "identifier" : "macos-arm64_x86_64"
@@ -16,13 +16,13 @@
   "commitish" : "v1.1.0",
   "iOS" : [
     {
-      "hash" : "008e42a659958c79b907f762dd4493915f16aefb5f182190acf416e0b81d8f3a",
+      "hash" : "3f083ac6d1f6232453977ea28953cba706abc85a19e51444c725bbc6f98e3475",
       "name" : "Masonry",
       "container" : "Masonry.xcframework",
       "identifier" : "ios-arm64"
     },
     {
-      "hash" : "eb438dee3b34a46932a68cfffda65a584477f8e50b02b89bc576f50c1e6fdd5e",
+      "hash" : "724ddec2645aed25405b4cdbfead867cdeb727a9e90dd2770fc17913d07fb3cd",
       "name" : "Masonry",
       "container" : "Masonry.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"

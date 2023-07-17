@@ -11,13 +11,13 @@
   "commitish" : "3.7.6",
   "iOS" : [
     {
-      "hash" : "6f15dd723d7422ae1dbfe46c4a256c36acbbf106ffef4f4e1e5674b63edb8ead",
+      "hash" : "6df120affc80b77c317fd5c2a4d80677fd17f589602b7d93d7129234e3a89ead",
       "name" : "MJRefresh",
       "container" : "MJRefresh.xcframework",
       "identifier" : "ios-arm64"
     },
     {
-      "hash" : "0a38825438f5b98369a4916ab101224e485cb515d7c4100f1a23c43efa0099dd",
+      "hash" : "94c20a92a99d81ba83d6d8a7f32acdf9a2ff9b0ebc8d0811ecac06f93996fb77",
       "name" : "MJRefresh",
       "container" : "MJRefresh.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"
