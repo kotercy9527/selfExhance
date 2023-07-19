@@ -7,6 +7,7 @@
 
 #import "SettingViewController.h"
 #import "ScrollInScrollViewController.h"
+#import "PathAnimationViewController.h"
 #import "SubChooseView.h"
 #import <Masonry/Masonry.h>
 
@@ -30,7 +31,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.titleArray = @[@"ScrollInScroll"];
+    self.titleArray = @[@"ScrollInScroll",@"pathAnimation"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -53,6 +54,10 @@
     if ([title isEqualToString:@"ScrollInScroll"]) {
         ScrollInScrollViewController *vc = [[ScrollInScrollViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+        self.navigationController.hidesBottomBarWhenPushed = YES;
+    } else if ([title isEqualToString:@"pathAnimation"]) {
+        PathAnimationViewController *path = [[PathAnimationViewController alloc] init];
+        [self.navigationController pushViewController:path animated:YES];
         self.navigationController.hidesBottomBarWhenPushed = YES;
     }
 }
