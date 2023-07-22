@@ -8,6 +8,7 @@
 #import "SettingViewController.h"
 #import "ScrollInScrollViewController.h"
 #import "PathAnimationViewController.h"
+#import "CustomColletionViewLayoutViewController.h"
 #import "SubChooseView.h"
 #import <Masonry/Masonry.h>
 
@@ -31,7 +32,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.titleArray = @[@"ScrollInScroll",@"pathAnimation"];
+    self.titleArray = @[@"ScrollInScroll",@"pathAnimation",@"customLayout"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -53,12 +54,19 @@
     NSString *title = [self.titleArray objectAtIndex:indexPath.row];
     if ([title isEqualToString:@"ScrollInScroll"]) {
         ScrollInScrollViewController *vc = [[ScrollInScrollViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
-        self.navigationController.hidesBottomBarWhenPushed = YES;
+        
     } else if ([title isEqualToString:@"pathAnimation"]) {
         PathAnimationViewController *path = [[PathAnimationViewController alloc] init];
+        path.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:path animated:YES];
-        self.navigationController.hidesBottomBarWhenPushed = YES;
+        
+    } else if ([title isEqualToString:@"customLayout"]) {
+        CustomColletionViewLayoutViewController *vc = [[CustomColletionViewLayoutViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }
 }
 @end
