@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24D11722A6ED4BC006E440C /* MyCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D11712A6ED4BC006E440C /* MyCollectionViewHeader.m */; };
+		F24D11752A701EBC006E440C /* UICollectionSupplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */; };
+		F24D11782A701F9C006E440C /* SupplementaryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D11772A701F9C006E440C /* SupplementaryLayout.m */; };
 		F2D9AC412A63EFF9003BC976 /* LookinServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D9AC3F2A63EFEA003BC976 /* LookinServer.framework */; };
 		F2D9AC422A63EFF9003BC976 /* LookinServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D9AC3F2A63EFEA003BC976 /* LookinServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2D9AC452A6599B1003BC976 /* ScrollInScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D9AC442A6599B1003BC976 /* ScrollInScrollViewController.m */; };
@@ -51,6 +54,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F24D11702A6ED4BC006E440C /* MyCollectionViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewHeader.h; sourceTree = "<group>"; };
+		F24D11712A6ED4BC006E440C /* MyCollectionViewHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewHeader.m; sourceTree = "<group>"; };
+		F24D11732A701EBC006E440C /* UICollectionSupplementaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionSupplementaryViewController.h; sourceTree = "<group>"; };
+		F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionSupplementaryViewController.m; sourceTree = "<group>"; };
+		F24D11762A701F9C006E440C /* SupplementaryLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupplementaryLayout.h; sourceTree = "<group>"; };
+		F24D11772A701F9C006E440C /* SupplementaryLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupplementaryLayout.m; sourceTree = "<group>"; };
 		F2D9AC3F2A63EFEA003BC976 /* LookinServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LookinServer.framework; sourceTree = "<group>"; };
 		F2D9AC432A6599B1003BC976 /* ScrollInScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollInScrollViewController.h; sourceTree = "<group>"; };
 		F2D9AC442A6599B1003BC976 /* ScrollInScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollInScrollViewController.m; sourceTree = "<group>"; };
@@ -142,6 +151,8 @@
 			children = (
 				F2EC8E362A5AD5F8008F1BFB /* MyCollectionViewCell.h */,
 				F2EC8E372A5AD5F8008F1BFB /* MyCollectionViewCell.m */,
+				F24D11702A6ED4BC006E440C /* MyCollectionViewHeader.h */,
+				F24D11712A6ED4BC006E440C /* MyCollectionViewHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +186,8 @@
 				F2D9AC962A684036003BC976 /* PathAnimationViewController.m */,
 				F2D9AC982A6AE151003BC976 /* CustomColletionViewLayoutViewController.h */,
 				F2D9AC992A6AE151003BC976 /* CustomColletionViewLayoutViewController.m */,
+				F24D11732A701EBC006E440C /* UICollectionSupplementaryViewController.h */,
+				F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -188,6 +201,8 @@
 				F2D9ACA22A6AEEC6003BC976 /* AFCollectionViewFlowLayout.m */,
 				F2D9ACA42A6AF66F003BC976 /* AFDecorationView.h */,
 				F2D9ACA52A6AF66F003BC976 /* AFDecorationView.m */,
+				F24D11762A701F9C006E440C /* SupplementaryLayout.h */,
+				F24D11772A701F9C006E440C /* SupplementaryLayout.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,11 +355,13 @@
 				F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */,
 				F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */,
 				F2D9ACA02A6AE7C0003BC976 /* AFCollectionViewCell.m in Sources */,
+				F24D11722A6ED4BC006E440C /* MyCollectionViewHeader.m in Sources */,
 				F2D9AC9D2A6AE40A003BC976 /* AFCollectionViewCircleLayout.m in Sources */,
 				F2D9AC452A6599B1003BC976 /* ScrollInScrollViewController.m in Sources */,
 				F2D9AC972A684036003BC976 /* PathAnimationViewController.m in Sources */,
 				F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */,
 				F2EC8E0F2A5AD18E008F1BFB /* main.m in Sources */,
+				F24D11782A701F9C006E440C /* SupplementaryLayout.m in Sources */,
 				F2D9AC942A65B613003BC976 /* HitTestView.m in Sources */,
 				F2D9AC9A2A6AE151003BC976 /* CustomColletionViewLayoutViewController.m in Sources */,
 				F2D9ACA32A6AEEC6003BC976 /* AFCollectionViewFlowLayout.m in Sources */,
@@ -352,6 +369,7 @@
 				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
 				F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */,
 				F2DB0D5A2A61B4DC002D41F1 /* SettingViewController.m in Sources */,
+				F24D11752A701EBC006E440C /* UICollectionSupplementaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
