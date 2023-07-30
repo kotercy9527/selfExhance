@@ -69,4 +69,25 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(100, 50);
 }
+
+
+//如果要collection view想要支持复制操作，那么要实现以下三个方法
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    if ([NSStringFromSelector(action) isEqualToString:@"copy:"]) {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    if ([NSStringFromSelector(action) isEqualToString:@"copy"]) {
+        NSLog(@"执行了复制操作");
+    }
+}
+
+
 @end
