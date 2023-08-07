@@ -28,6 +28,8 @@
 		F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0DB22A62435B002D41F1 /* SubChooseView.m */; };
 		F2DB0DB72A6247DB002D41F1 /* SubChooseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0DB62A6247DB002D41F1 /* SubChooseCollectionViewCell.m */; };
 		F2EA929F2A7C01290043F349 /* TextChangeAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */; };
+		F2EA92A22A81A0BF0043F349 /* ArithmeticMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA92A12A81A0BF0043F349 /* ArithmeticMainViewController.m */; };
+		F2EA92A72A81A84E0043F349 /* LongestSubStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA92A62A81A84D0043F349 /* LongestSubStringViewController.m */; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
@@ -88,6 +90,10 @@
 		F2DB0DB62A6247DB002D41F1 /* SubChooseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubChooseCollectionViewCell.m; sourceTree = "<group>"; };
 		F2EA929D2A7C01290043F349 /* TextChangeAnimateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextChangeAnimateViewController.h; sourceTree = "<group>"; };
 		F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextChangeAnimateViewController.m; sourceTree = "<group>"; };
+		F2EA92A02A81A0BF0043F349 /* ArithmeticMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArithmeticMainViewController.h; sourceTree = "<group>"; };
+		F2EA92A12A81A0BF0043F349 /* ArithmeticMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArithmeticMainViewController.m; sourceTree = "<group>"; };
+		F2EA92A52A81A84D0043F349 /* LongestSubStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongestSubStringViewController.h; sourceTree = "<group>"; };
+		F2EA92A62A81A84D0043F349 /* LongestSubStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongestSubStringViewController.m; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -193,6 +199,8 @@
 				F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */,
 				F2EA929D2A7C01290043F349 /* TextChangeAnimateViewController.h */,
 				F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */,
+				F2EA92A02A81A0BF0043F349 /* ArithmeticMainViewController.h */,
+				F2EA92A12A81A0BF0043F349 /* ArithmeticMainViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -252,6 +260,15 @@
 			path = SubChoose;
 			sourceTree = "<group>";
 		};
+		F2EA92A42A81A82A0043F349 /* ArithmeticModel */ = {
+			isa = PBXGroup;
+			children = (
+				F2EA92A52A81A84D0043F349 /* LongestSubStringViewController.h */,
+				F2EA92A62A81A84D0043F349 /* LongestSubStringViewController.m */,
+			);
+			path = ArithmeticModel;
+			sourceTree = "<group>";
+		};
 		F2EC8DF02A5AD18D008F1BFB = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +288,7 @@
 		F2EC8DFB2A5AD18D008F1BFB /* CollectionViewCustomLayout */ = {
 			isa = PBXGroup;
 			children = (
+				F2EA92A42A81A82A0043F349 /* ArithmeticModel */,
 				F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */,
 				F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */,
 				F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */,
@@ -359,6 +377,7 @@
 				F2D9ACA62A6AF66F003BC976 /* AFDecorationView.m in Sources */,
 				F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */,
 				F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */,
+				F2EA92A72A81A84E0043F349 /* LongestSubStringViewController.m in Sources */,
 				F2D9ACA02A6AE7C0003BC976 /* AFCollectionViewCell.m in Sources */,
 				F24D11722A6ED4BC006E440C /* MyCollectionViewHeader.m in Sources */,
 				F2D9AC9D2A6AE40A003BC976 /* AFCollectionViewCircleLayout.m in Sources */,
@@ -370,6 +389,7 @@
 				F2D9AC942A65B613003BC976 /* HitTestView.m in Sources */,
 				F2D9AC9A2A6AE151003BC976 /* CustomColletionViewLayoutViewController.m in Sources */,
 				F2D9ACA32A6AEEC6003BC976 /* AFCollectionViewFlowLayout.m in Sources */,
+				F2EA92A22A81A0BF0043F349 /* ArithmeticMainViewController.m in Sources */,
 				F2EC8E3B2A5ADB76008F1BFB /* MyCollectionViewLayout.m in Sources */,
 				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
 				F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */,

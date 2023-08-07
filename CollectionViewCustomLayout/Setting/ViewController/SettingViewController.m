@@ -12,6 +12,7 @@
 #import "UICollectionSupplementaryViewController.h"
 #import "TextChangeAnimateViewController.h"
 #import "SubChooseView.h"
+#import "ArithmeticMainViewController.h"
 #import <Masonry/Masonry.h>
 
 @interface SettingViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -34,7 +35,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.titleArray = @[@"ScrollInScroll",@"pathAnimation",@"customLayout",@"supplementaryCollectionView",@"textAnimateView"];
+    self.titleArray = @[@"ScrollInScroll",@"pathAnimation",@"customLayout",@"supplementaryCollectionView",@"textAnimateView",@"算法"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -74,6 +75,10 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([title isEqualToString:@"textAnimateView"]) {
         TextChangeAnimateViewController *vc = [[TextChangeAnimateViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"算法"]) {
+        ArithmeticMainViewController *vc = [[ArithmeticMainViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
