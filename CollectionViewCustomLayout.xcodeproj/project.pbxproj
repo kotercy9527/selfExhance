@@ -27,6 +27,7 @@
 		F2DB0DB02A623E03002D41F1 /* MJRefresh.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB0DAB2A623DF5002D41F1 /* MJRefresh.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0DB22A62435B002D41F1 /* SubChooseView.m */; };
 		F2DB0DB72A6247DB002D41F1 /* SubChooseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0DB62A6247DB002D41F1 /* SubChooseCollectionViewCell.m */; };
+		F2EA929F2A7C01290043F349 /* TextChangeAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
@@ -85,6 +86,8 @@
 		F2DB0DB22A62435B002D41F1 /* SubChooseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubChooseView.m; sourceTree = "<group>"; };
 		F2DB0DB52A6247DB002D41F1 /* SubChooseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubChooseCollectionViewCell.h; sourceTree = "<group>"; };
 		F2DB0DB62A6247DB002D41F1 /* SubChooseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubChooseCollectionViewCell.m; sourceTree = "<group>"; };
+		F2EA929D2A7C01290043F349 /* TextChangeAnimateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextChangeAnimateViewController.h; sourceTree = "<group>"; };
+		F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextChangeAnimateViewController.m; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				F2D9AC992A6AE151003BC976 /* CustomColletionViewLayoutViewController.m */,
 				F24D11732A701EBC006E440C /* UICollectionSupplementaryViewController.h */,
 				F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */,
+				F2EA929D2A7C01290043F349 /* TextChangeAnimateViewController.h */,
+				F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 				F2EC8E382A5AD5F8008F1BFB /* MyCollectionViewCell.m in Sources */,
 				F2EC8E412A5AF4DF008F1BFB /* NSString+Width.m in Sources */,
 				F2DB0D5A2A61B4DC002D41F1 /* SettingViewController.m in Sources */,
+				F2EA929F2A7C01290043F349 /* TextChangeAnimateViewController.m in Sources */,
 				F24D11752A701EBC006E440C /* UICollectionSupplementaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

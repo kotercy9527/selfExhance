@@ -10,6 +10,7 @@
 #import "PathAnimationViewController.h"
 #import "CustomColletionViewLayoutViewController.h"
 #import "UICollectionSupplementaryViewController.h"
+#import "TextChangeAnimateViewController.h"
 #import "SubChooseView.h"
 #import <Masonry/Masonry.h>
 
@@ -33,7 +34,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.titleArray = @[@"ScrollInScroll",@"pathAnimation",@"customLayout",@"supplementaryCollectionView"];
+    self.titleArray = @[@"ScrollInScroll",@"pathAnimation",@"customLayout",@"supplementaryCollectionView",@"textAnimateView"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -69,6 +70,10 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([title isEqualToString:@"supplementaryCollectionView"]) {
         UICollectionSupplementaryViewController *vc = [[UICollectionSupplementaryViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"textAnimateView"]) {
+        TextChangeAnimateViewController *vc = [[TextChangeAnimateViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
