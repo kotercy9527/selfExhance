@@ -49,6 +49,11 @@
     model.title = @"字符串连续最长子串";
     model.viewControllerName = @"LongestSubStringViewController";
     [self.models addObject:model];
+    
+    ArithmeticModel *model1 = [[ArithmeticModel alloc] init];
+    model1.title = @"连续几个数字最大的和";
+    model1.viewControllerName = @"ContinuousMaxViewController";
+    [self.models addObject:model1];
 }
 
 -  (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
