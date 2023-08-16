@@ -31,6 +31,7 @@
 		F2EA92A22A81A0BF0043F349 /* ArithmeticMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA92A12A81A0BF0043F349 /* ArithmeticMainViewController.m */; };
 		F2EA92A72A81A84E0043F349 /* LongestSubStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA92A62A81A84D0043F349 /* LongestSubStringViewController.m */; };
 		F2EA92BD2A8AF1120043F349 /* ContinuousMaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA92BC2A8AF1120043F349 /* ContinuousMaxViewController.m */; };
+		F2EA92C02A8C42C00043F349 /* FibonacciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA92BF2A8C42C00043F349 /* FibonacciViewController.m */; };
 		F2EC8DFE2A5AD18D008F1BFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */; };
 		F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC8E032A5AD18D008F1BFB /* HomeViewController.m */; };
 		F2EC8E092A5AD18E008F1BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EC8E082A5AD18E008F1BFB /* Assets.xcassets */; };
@@ -97,6 +98,8 @@
 		F2EA92A62A81A84D0043F349 /* LongestSubStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongestSubStringViewController.m; sourceTree = "<group>"; };
 		F2EA92BB2A8AF1120043F349 /* ContinuousMaxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContinuousMaxViewController.h; sourceTree = "<group>"; };
 		F2EA92BC2A8AF1120043F349 /* ContinuousMaxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContinuousMaxViewController.m; sourceTree = "<group>"; };
+		F2EA92BE2A8C42C00043F349 /* FibonacciViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibonacciViewController.h; sourceTree = "<group>"; };
+		F2EA92BF2A8C42C00043F349 /* FibonacciViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibonacciViewController.m; sourceTree = "<group>"; };
 		F2EC8DF92A5AD18D008F1BFB /* CollectionViewCustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2EC8DFC2A5AD18D008F1BFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2EC8DFD2A5AD18D008F1BFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				F2EA92A62A81A84D0043F349 /* LongestSubStringViewController.m */,
 				F2EA92BB2A8AF1120043F349 /* ContinuousMaxViewController.h */,
 				F2EA92BC2A8AF1120043F349 /* ContinuousMaxViewController.m */,
+				F2EA92BE2A8C42C00043F349 /* FibonacciViewController.h */,
+				F2EA92BF2A8C42C00043F349 /* FibonacciViewController.m */,
 			);
 			path = ArithmeticModel;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				F2D9ACA62A6AF66F003BC976 /* AFDecorationView.m in Sources */,
 				F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */,
 				F2EC8E042A5AD18D008F1BFB /* HomeViewController.m in Sources */,
+				F2EA92C02A8C42C00043F349 /* FibonacciViewController.m in Sources */,
 				F2EA92A72A81A84E0043F349 /* LongestSubStringViewController.m in Sources */,
 				F2D9ACA02A6AE7C0003BC976 /* AFCollectionViewCell.m in Sources */,
 				F24D11722A6ED4BC006E440C /* MyCollectionViewHeader.m in Sources */,

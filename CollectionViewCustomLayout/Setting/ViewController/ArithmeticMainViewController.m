@@ -7,6 +7,7 @@
 
 #import "ArithmeticMainViewController.h"
 #import <Masonry/Masonry.h>
+#import "FibonacciViewController.h"
 
 @interface ArithmeticModel : NSObject
 
@@ -54,6 +55,11 @@
     model1.title = @"连续几个数字最大的和";
     model1.viewControllerName = @"ContinuousMaxViewController";
     [self.models addObject:model1];
+    
+    ArithmeticModel *model2 = [[ArithmeticModel alloc] init];
+    model2.title = @"斐波拉契数列第n项";
+    model2.viewControllerName = @"FibonacciViewController";
+    [self.models addObject:model2];
 }
 
 -  (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
