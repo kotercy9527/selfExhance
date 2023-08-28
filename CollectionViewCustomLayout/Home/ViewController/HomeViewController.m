@@ -19,6 +19,8 @@
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) MyCollectionViewLayout *customLayout;
+@property (nonatomic, strong) UILabel  *label;
+@property (nonatomic, assign) NSInteger baseNumber;
 
 @end
 
@@ -49,6 +51,14 @@
         make.centerX.equalTo(self.view);
         make.centerY.equalTo(self.view.mas_top).offset(100);
     }];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(btn.mas_bottom).offset(2);
+        make.centerX.equalTo(self.view);
+    }];
+    self.label = label;
     
     MyCollectionViewLayout *layout = [[MyCollectionViewLayout alloc] initWithRowHeight:50 rowGap:10 inset:UIEdgeInsetsMake(0, 10, 0, 10)];
     layout.dataSource = self;
@@ -84,6 +94,14 @@
         });
        
     }];
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerPlus) userInfo:nil repeats:YES];
+    
+}
+
+- (void)timerPlus {
+    self.baseNumber ++;
+    self.label.text = @(self.baseNumber).stringValue;
 }
 
 - (void)buttonClicked_switchLayout {
