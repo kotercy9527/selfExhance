@@ -10,6 +10,9 @@
 		F24D11722A6ED4BC006E440C /* MyCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D11712A6ED4BC006E440C /* MyCollectionViewHeader.m */; };
 		F24D11752A701EBC006E440C /* UICollectionSupplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */; };
 		F24D11782A701F9C006E440C /* SupplementaryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F24D11772A701F9C006E440C /* SupplementaryLayout.m */; };
+		F2BDE0EC2AA14F4C0080D0BE /* CustomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDE0EB2AA14F4C0080D0BE /* CustomCollectionViewController.m */; };
+		F2BDE0EF2AA151760080D0BE /* FrameTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDE0EE2AA151760080D0BE /* FrameTestViewController.m */; };
+		F2BDE0F22AA1527D0080D0BE /* FrameTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDE0F12AA1527D0080D0BE /* FrameTestTableViewCell.m */; };
 		F2D9AC412A63EFF9003BC976 /* LookinServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D9AC3F2A63EFEA003BC976 /* LookinServer.framework */; };
 		F2D9AC422A63EFF9003BC976 /* LookinServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D9AC3F2A63EFEA003BC976 /* LookinServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2D9AC452A6599B1003BC976 /* ScrollInScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D9AC442A6599B1003BC976 /* ScrollInScrollViewController.m */; };
@@ -65,6 +68,12 @@
 		F24D11742A701EBC006E440C /* UICollectionSupplementaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionSupplementaryViewController.m; sourceTree = "<group>"; };
 		F24D11762A701F9C006E440C /* SupplementaryLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupplementaryLayout.h; sourceTree = "<group>"; };
 		F24D11772A701F9C006E440C /* SupplementaryLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupplementaryLayout.m; sourceTree = "<group>"; };
+		F2BDE0EA2AA14F4C0080D0BE /* CustomCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewController.h; sourceTree = "<group>"; };
+		F2BDE0EB2AA14F4C0080D0BE /* CustomCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewController.m; sourceTree = "<group>"; };
+		F2BDE0ED2AA151760080D0BE /* FrameTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameTestViewController.h; sourceTree = "<group>"; };
+		F2BDE0EE2AA151760080D0BE /* FrameTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameTestViewController.m; sourceTree = "<group>"; };
+		F2BDE0F02AA1527D0080D0BE /* FrameTestTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameTestTableViewCell.h; sourceTree = "<group>"; };
+		F2BDE0F12AA1527D0080D0BE /* FrameTestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameTestTableViewCell.m; sourceTree = "<group>"; };
 		F2D9AC3F2A63EFEA003BC976 /* LookinServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LookinServer.framework; sourceTree = "<group>"; };
 		F2D9AC432A6599B1003BC976 /* ScrollInScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollInScrollViewController.h; sourceTree = "<group>"; };
 		F2D9AC442A6599B1003BC976 /* ScrollInScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollInScrollViewController.m; sourceTree = "<group>"; };
@@ -207,6 +216,10 @@
 				F2EA929E2A7C01290043F349 /* TextChangeAnimateViewController.m */,
 				F2EA92A02A81A0BF0043F349 /* ArithmeticMainViewController.h */,
 				F2EA92A12A81A0BF0043F349 /* ArithmeticMainViewController.m */,
+				F2BDE0EA2AA14F4C0080D0BE /* CustomCollectionViewController.h */,
+				F2BDE0EB2AA14F4C0080D0BE /* CustomCollectionViewController.m */,
+				F2BDE0ED2AA151760080D0BE /* FrameTestViewController.h */,
+				F2BDE0EE2AA151760080D0BE /* FrameTestViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -232,6 +245,8 @@
 				F2DB0DB42A6247B9002D41F1 /* SubChoose */,
 				F2D9AC9E2A6AE7C0003BC976 /* AFCollectionViewCell.h */,
 				F2D9AC9F2A6AE7C0003BC976 /* AFCollectionViewCell.m */,
+				F2BDE0F02AA1527D0080D0BE /* FrameTestTableViewCell.h */,
+				F2BDE0F12AA1527D0080D0BE /* FrameTestTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BDE0EC2AA14F4C0080D0BE /* CustomCollectionViewController.m in Sources */,
+				F2BDE0F22AA1527D0080D0BE /* FrameTestTableViewCell.m in Sources */,
+				F2BDE0EF2AA151760080D0BE /* FrameTestViewController.m in Sources */,
 				F2DB0DB72A6247DB002D41F1 /* SubChooseCollectionViewCell.m in Sources */,
 				F2D9ACA62A6AF66F003BC976 /* AFDecorationView.m in Sources */,
 				F2DB0DB32A62435B002D41F1 /* SubChooseView.m in Sources */,
