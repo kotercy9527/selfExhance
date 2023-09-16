@@ -8,6 +8,7 @@
 #import "ArithmeticMainViewController.h"
 #import <Masonry/Masonry.h>
 #import "FibonacciViewController.h"
+#import "LastNElementViewController.h"
 
 @interface ArithmeticModel : NSObject
 
@@ -60,6 +61,11 @@
     model2.title = @"斐波拉契数列第n项";
     model2.viewControllerName = @"FibonacciViewController";
     [self.models addObject:model2];
+    
+    ArithmeticModel *model3 = [[ArithmeticModel alloc] init];
+    model3.title = @"链表第N项";
+    model3.viewControllerName = @"LastNElementViewController";
+    [self.models addObject:model3];
 }
 
 -  (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
