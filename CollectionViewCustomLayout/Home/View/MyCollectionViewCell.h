@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyCollectionViewCell : UICollectionViewCell
 
+
 - (void)updateContent:(NSString *)text;
 
 @end
